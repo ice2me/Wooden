@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,29 @@
 	<title>Test</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<div class="container">
-		<header>
+		<header id="header">
 			<div class="top">
-				<div class="burger-menu"> <!-- создание кнопки с крестиком  burger-menu_active  -->
+				<div class="burger-menu">
+					<!-- создание кнопки с крестиком  burger-menu_active  -->
 					<a href="#" class="burger-menu__button">
 						<span class="burger-menu__lines"></span> <!-- создание самой кнопки -->
 					</a>
 					<nav class="burger-menu__nav">
 						<ul>
 							<li>
-								<a href="#about__me" class="burger-menu__link">Home</a>
+								<a href="#header" class="burger-menu__link">Home</a>
 							</li>
 							<li>
-								<a href="#education" class="burger-menu__link">Products</a>
+								<a href="#furniture" class="burger-menu__link">Products</a>
 							</li>
 							<li>
-								<a href="#work" class="burger-menu__link">About</a>
+								<a href="#about-us" class="burger-menu__link">About</a>
 							</li>
 							<li>
-								<a href="#skills" class="burger-menu__link">EN</a>
+								<a href="#" class="burger-menu__link">RU</a>
 							</li>
 						</ul>
 					</nav>
@@ -40,12 +43,14 @@
 						<div class="top__menu-name">
 							<a href="#">LOREM</a>
 						</div>
-						<a href="#">HOME</a>
-						<a href="#">PRODUCTS</a>
-						<a href="#">ABOUT</a>
+						<a href="#header">HOME</a>
+						<a href="#furniture">PRODUCTS</a>
+						<a href="#about-us">ABOUT</a>
 					</div>
 					<div class="top__menu-right">
-						<a href="#"><p>RU</p></a>
+						<a href="#">
+							<p>RU</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -56,20 +61,30 @@
 					<div class="titul__left">
 						<div class="titul__left-line"></div>
 						<div class="titul__left-number">1</div>
-						<a href="#furniture"><div class="titul__left-point"></div></a>
-						<a href="#decor"><div class="titul__left-point"></div></a>
-						<a href="#quality"><div class="titul__left-point"></div></a>
-						<a href="#"><div class="titul__left-point"></div></a>
+						<a href="#furniture">
+							<div class="titul__left-point"></div>
+						</a>
+						<a href="#quality">
+							<div class="titul__left-point"></div>
+						</a>
+						<a href="#player">
+							<div class="titul__left-point"></div>
+						</a>
+						<a href="#footer">
+							<div class="titul__left-point"></div>
+						</a>
 					</div>
 					<div class="titul__center">
 						<div class="titul__center-name">
 							<h1>LOREM</h1>
 						</div>
 						<div class="titul__center-button">
-							<button value="button" name="learn_more" type="learn_more">
-								<span>LEARN MORE</span>
-								<img src="img/arrow.png" alt="">
-							</button>
+							<a href="#">
+								<button value="button" name="learn_more" type="learn_more">
+									<span>LEARN MORE</span>
+									<img src="img/arrow.png" alt="">
+								</button>
+							</a>
 						</div>
 						<div class="titul__center-mouse">
 							<img src="img/mouse.png" alt="mouse">
@@ -81,33 +96,33 @@
 							<button href="#" class="share__link">
 								<img src="img/share.png" alt="share">
 							</button>
-								<ul class="share__social">
-									<li>
-										<a href="#">
-											<img src="img/facebook.png" alt="" width="50px" height="50px">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="img/Instagram.png" alt="" width="50px" height="50px">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="img/twitter.png" alt="" width="50px" height="50px">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="img/youtube.png" alt="" width="50px" height="50px">
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<img src="img/g+.png" alt="" width="50px" height="50px">
-										</a>
-									</li>
-								</ul>
+							<ul class="share__social">
+								<li>
+									<a href="#">
+										<img src="img/facebook.png" alt="" width="50px" height="50px">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/Instagram.png" alt="" width="50px" height="50px">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/twitter.png" alt="" width="50px" height="50px">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/youtube.png" alt="" width="50px" height="50px">
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="img/g+.png" alt="" width="50px" height="50px">
+									</a>
+								</li>
+							</ul>
 							</but>
 						</div>
 					</div>
@@ -124,21 +139,24 @@
 							<div class="furniture__left-text">
 								<div class="furniture__left-textline"></div>
 								<span>
-									Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+									Wooder utilizes materials otherwise left behind, rendered useless in their original
+									intent. By creating new pieces made of reclaimed barnwood
 								</span>
 							</div>
 							<div class="furniture__left-button">
-								<button value="button" name="learn_more" type="learn_more">
-									<span>LEARN MORE</span>
-									<img src="img/arrow1.png" alt="">
-								</button>
+								<a href="#">
+									<button value="button" name="learn_more" type="learn_more">
+										<span>LEARN MORE</span>
+										<img src="img/arrow1.png" alt="">
+									</button>
+								</a>
 							</div>
 							<div class="furniture__left-number">
 								<p>01.</p>
 								<div class="furniture__left-numberline"></div>
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="furniture__right">
 						<img src="./img/furniture__1.png" alt="">
@@ -155,22 +173,25 @@
 							</div>
 							<div class="decor__left-text">
 								<span>
-									Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new pieces made of reclaimed barnwood
+									Wooder utilizes materials otherwise left behind, rendered useless in their original
+									intent. By creating new pieces made of reclaimed barnwood
 								</span>
 								<div class="decor__left-textline"></div>
 							</div>
 							<div class="decor__left-button">
-								<button value="button" name="learn_more" type="learn_more">
-									<span>LEARN MORE</span>
-									<img src="img/arrow1.png" alt="">
-								</button>
+								<a href="#">
+									<button value="button" name="learn_more" type="learn_more">
+										<span>LEARN MORE</span>
+										<img src="img/arrow1.png" alt="">
+									</button>
+								</a>
 							</div>
 							<div class="decor__left-number">
 								<p>02.</p>
 								<div class="decor__left-numberline"></div>
 							</div>
 						</div>
-						
+
 					</div>
 					<div class="decor__right">
 						<img src="./img/decor.png" alt="">
@@ -183,38 +204,113 @@
 						<h2>WOODER - IS QUALITY</h2>
 						<div class="quality__text">
 							<span>
-								We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.
+								We create unique design objects made of rare wood, specially under the order. Look at
+								the short video about our work.
 							</span>
 						</div>
 					</div>
 					<div class="quality__promo">
 						<div class="quality__promo-one">
 							<img class="quality__promo-bg" src="./img/upcycled-01.png" alt="">
-								<a href="#">
-									<img class="quality__promo-play" src="./img/play.png" alt="">
-								</a>
+							<a href="#">
+								<img class="quality__promo-play" src="./img/play.png" alt="">
+							</a>
 							<p>Innovative Design</p>
 						</div>
 						<div class="quality__promo-two">
 							<img class="quality__promo-bg" src="./img/upcycled-02.png" alt="">
-								<a href="#">
-									<img class="quality__promo-play" src="./img/play.png" alt="">
-								</a>
+							<a href="#">
+								<img class="quality__promo-play" src="./img/play.png" alt="">
+							</a>
 							<p>High-level Skills</p>
 						</div>
 						<div class="quality__promo-there">
 							<img class="quality__promo-bg" src="./img/upcycled-03.png" alt="">
-								<a href="#">
-									<img class="quality__promo-play" src="./img/play.png" alt="">
-								</a>
+							<a href="#">
+								<img class="quality__promo-play" src="./img/play.png" alt="">
+							</a>
 							<p>Quality Products</p>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section id="player">
+				<div class="player">
+					<div class="player__content">
+						<div class="player__content-bg">
+							<div class="player__content-name">
+								<h2>
+									we Do the design
+									of any complexity
+								</h2>
+							</div>
+							<div class="player__content-text">
+								<span>
+									This is a team of professionals that make the furniture and
+									wood décor high standard. Creating modern designs.
+									Adhering to the global quality standards. And we are
+									doing work with love.
+								</span>
+							</div>
+							<div class="player__content-button">
+								<a href="#">
+									<button value="button" name="learn_more" type="learn_more">
+										<span>watch video</span>
+										<img src="img/player6.png" alt="">
+									</button>
+								</a>
+							</div>
+							<div class="player__content-rightline"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about-us">
+				<div class="about">
+					<div class="about__image">
+						<img src="./img/daeb.png" alt="about-us">
+					</div>
+					<div class="about__content">
+						<div class="about__content-name">
+							<h2>ABOUT US</h2>
+						</div>
+						<div class="about__content-text">
+							<span>
+								We are a team of professionals in the wood processing and the creation of wooden
+								furniture
+								of the highest class
+							</span>
+						</div>
+						<div class="about__content-button">
+							<a href="#">
+								<button value="button" name="learn_more" type="learn_more">
+									<span>LEARN MORE</span>
+									<img src="img/arrow1.png" alt="">
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer id="footer">
+			<div class="down">
+				<div class="down__left">
+					<span>© 2020 LOREM</span>
+				</div>
+				<div class="down__center">
+					<a href="#">
+						<span>LOREM</span>
+					</a>
+				</div>
+				<div class="down__right">
+					<span>Developed by Serhii Zuiev</span>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
