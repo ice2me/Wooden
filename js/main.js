@@ -1,4 +1,4 @@
-$(document).ready(function(){       // плавное перемещение страницы к нужному блоку
+$(document).ready(function(){		 // плавное перемещение страницы к нужному блоку
 	$("nav, li, a").click(function () {
 		elementClick = $(this).attr("href");
 		destination = $(elementClick).offset().top;
@@ -70,7 +70,14 @@ $('.share__link').click(function(){
 });
 
 
-
-
-
+// -------------predloader-------------
+document.body.onload = function()
+{
+	$(".dot-1").css("animation", "dot-light 1s 0s forwards");
+	$(".dot-2").css("animation", "dot-light 1s 0.75s forwards");
+	$(".dot-3").css("animation", "dot-light 1s 1.5s forwards");
+	$(".dot-4").css("animation", "dot-light 1s 2.25s forwards");
+	setTimeout(function(){$(".item-1").css("width", "0");}, 2500);
+	setTimeout(function(){$(".preloader").css("visibility", "hidden");}, 3000);
+}
 

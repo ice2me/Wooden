@@ -13,7 +13,6 @@ a:focus,a:active
 nav,footer,header,aside
 	display: block
 html,body
-	// background-color: grey 
 	height: 100%
 	width: 100%
 	font-size: 100%
@@ -69,7 +68,51 @@ h1,h2,h3,h4,h5,h6
 $gold: #B8860B
 /*--------------------------------------Start--Project----------------------------------*/
 
-
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	z-index: 9999
+.item-1
+	position: relative
+	height: 100%
+	width: 50%
+	background-color: #000
+	transition: 1.5s ease
+	z-index: 9998
+.right-side
+	position: absolute
+	right: 0
+	top: 0
+.item-1 span
+	color: #fff
+	position: absolute
+	top: 50%
+	transform: translateX(-50%)
+.left-side span
+	right: 0
+.right-side span
+	left: 0
+.dot
+	height: 10px
+	width: 10px
+	border-radius: 50%
+	position: absolute
+	top: 52%
+@keyframes dot-light
+	100%
+		background-color: $gold
+		box-shadow: 0 0 8px $gold, 0 0 8px $gold
+.dot-1
+	right: 25px
+.dot-2
+	right: 6px
+.dot-3
+	left: 6px
+.dot-4
+	left: 25px
 .container
 	max-width: 100%
 	margin: 0 auto
@@ -665,9 +708,10 @@ $gold: #B8860B
 	display: flex
 	justify-content: center
 	align-items: center
-	background-image: url(../img/SplitShire-7483.png)
+	// background-image: url(../img/SplitShire-7483.png)
 	background-repeat: no-repeat
 	background-size: cover
+	background: transparent
 	position: relative
 	top: 0
 	left: 0
